@@ -1,6 +1,6 @@
-// import React from 'react';
+import React from 'react';
 
-export function Algebra(props) {
+function Facts(props) {
     return (
         <h2>I am a {props.color} Car!</h2>
     );
