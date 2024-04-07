@@ -1,0 +1,14 @@
+{
+    "facts": [
+      {
+        "title": "My First Blog",
+        "body": "hi!",
+        "id": 1
+      },
+      {
+        "title": "Opening Party!",
+        "body": "Come join us for a fun night of gaming!",
+        "id": 2
+      }
+    ]
+}
