@@ -1,50 +1,41 @@
-import React, { Component } from 'react';
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-// import Button from './components/Button'
-
-// import { Editor } from "react-draft-wysiwyg";
-import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-
-// function Facts(props) {
-//   return (
-//     <>
-//       <h2>These are {props.theme} facts!</h2>
-//       <p>{props.fact}</p>
-//     </>
-//   );
-// };
-
-// function Showthemes(props) {
-//   return (
-//     <>
-//       <h2>These are {props.theme} facts!</h2>
-//       <p>{props.fact}</p>
-//     </>
-//   );
-// }
-
-{/* <h1>hi! this is math facts!</h1>
-    <Button theme="Algebra"/>
-    <Button theme="Geometry"/>
-    <Button theme="Combinatorics"/>
-    <Button theme="Trigonometry"/> */}
+import Create from './components/Create'
+import NotFound from './components/NotFound'
+import FactDetails from './components/FactDetails'
+//import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+//import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
-
-  const title = 'Mathelper';
-
   return (
+    <Router>
     <div className="App">
       <Navbar />
       <div className="content">
-        <Home />
+        <Switch>
+          
+          <Route exact path="/">
+            <Home /> 
+          </Route>
+
+          <Route path="/create"> 
+            <Create />
+          </Route>
+
+          <Route path="/facts/:id"> 
+            <FactDetails />
+          </Route>
+
+          <Route path="/*">
+            <NotFound />
+          </Route>
+
+        </Switch>
       </div>
     </div>
+    </Router>
   )
 }
 
