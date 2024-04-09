@@ -1,6 +1,6 @@
 import React from 'react'
-import { useHistory, useParams } from 'react-router-dom';
 import useFetch from './useFetch';
+import { useHistory, useParams } from 'react-router-dom';
 
 const FactDetails = () => {
 

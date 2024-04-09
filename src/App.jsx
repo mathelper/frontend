@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Create from './components/Create'
-import NotFound from './components/NotFound'
-import FactDetails from './components/FactDetails'
-//import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-//import './App.css';
+
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Create from './components/Create';
+import NotFound from './components/NotFound';
+import FactDetails from './components/FactDetails';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
