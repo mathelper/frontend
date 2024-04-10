@@ -15,23 +15,10 @@ function App() {
       <Navbar />
       <div className="content">
         <Switch>
-          
-          <Route exact path="/">
-            <Home /> 
-          </Route>
-
-          <Route path="/create"> 
-            <Create />
-          </Route>
-
-          <Route path="/facts/:id"> 
-            <FactDetails />
-          </Route>
-
-          <Route path="/*">
-            <NotFound />
-          </Route>
-
+          <Route exact path="/" component={Home} />
+          <Route path="/create" component={Create} />
+          <Route path="/facts/:id" component={FactDetails} />
+          <Route path="/*" component={NotFound} />
         </Switch>
       </div>
     </div>
