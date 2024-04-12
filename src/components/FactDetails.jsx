@@ -18,8 +18,8 @@ const FactDetails = () => {
 
     return (
         <div className="fact-details">
-            { isPending && <div>Loading..</div> };
-            { error && <div>{ error }</div> };
+            { isPending && <div>Loading..</div> }
+            { error && <div>{ error }</div> }
             { fact && (
                 <article>
                     <h2>{ fact.title }</h2>
