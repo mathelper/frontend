@@ -1,3 +1,4 @@
+// it's a hook
 import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
@@ -32,7 +33,7 @@ const useFetch = (url) => {
                 setError(err.message);
                 }
             }) 
-        }, 700);
+        }, 200);
 
         return () => abortCont.abort();
 

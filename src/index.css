@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Quicksand", "Nunito", sans-serif;
   color: #333;
 }
 .navbar {
   padding: 20px;
-  display: flex;
+  display: flex; /*flexible box model*/
   align-items: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #305674; /*pink - '#f1356d'*/
 }
 .navbar .links {
   margin-left: auto;
@@ -24,13 +24,14 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #5da2d5;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #315e81;
 }
 .content {
-  max-width: 600px;
-  margin: 40px auto;
+  max-width: 700px;
+  margin: auto;
   padding: 20px;
 }
 
@@ -45,7 +46,7 @@
 }
 .fact-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #5da2d5;
   margin-bottom: 8px;
 }
 .fact-preview a{
@@ -55,14 +56,14 @@
 /* fact details page */
 .fact-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #5da2d5;
   margin-bottom: 10px;
 }
 .fact-details div {
   margin: 20px 0;
 }
 .fact-details button {
-  background: #f1356d;
+  background: #5da2d5;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -82,7 +83,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #5da2d5;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -94,7 +95,7 @@
   display: block;
 }
 .create button {
-  background: #f1356d;
+  background: #5da2d5;
   color: #fff;
   border: 0;
   padding: 8px;
