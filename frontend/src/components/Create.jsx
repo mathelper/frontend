@@ -17,7 +17,7 @@ const Create = () => {
 
 // 'http://localhost:8000/facts'
 
-        fetch(process.env.VITE_BASE_URL, {
+        fetch(import.meta.env.VITE_BASE_URL, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(fact)
