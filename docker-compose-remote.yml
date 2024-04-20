@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - localnet
+
+  bd:
+    build: ./db
+    container_name: db
+    ports:
+      - "8000:8000"
+    networks:
+      - localnet
+
+networks:
+  localnet:
+    driver: bridge
