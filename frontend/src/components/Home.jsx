@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 
 const Home = () => {
 
-    const { data: facts, isPending, error } = useFetch('http://localhost:8000/facts');
+    const { data: facts, isPending, error } = useFetch(import.meta.env.VITE_BASE_URL);
 
     return (
         <div className="home">

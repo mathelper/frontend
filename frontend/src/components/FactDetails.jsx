@@ -5,11 +5,11 @@ import { useHistory, useParams } from 'react-router-dom';
 const FactDetails = () => {
 
     const { id } = useParams();
-    const { data: fact, isPending, error } = useFetch('http://localhost:8000/facts/' + id);
+    const { data: fact, isPending, error } = useFetch(import.meta.env.VITE_BASE_URL + id);
     const history = useHistory();
 
     const handleClick = () => {
-        fetch('http://localhost:8000/facts/' + fact.id, {
+        fetch(import.meta.env.VITE_BASE_URL+ fact.id, {
             method: 'DELETE'
         }).then(() => {
             history.push('/');
