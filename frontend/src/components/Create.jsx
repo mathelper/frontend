@@ -30,10 +30,10 @@ const Create = () => {
 
     return (
         <div className="create">
-            <h2>Add a New Fact</h2>
+            <h2>Добавить факт</h2>
             <form onSubmit={handleSubmit}>
 
-                <label>Fact title:</label>
+                <label>Название:</label>
                 <input
                     type="text"
                     required
@@ -41,27 +41,27 @@ const Create = () => {
                     onChange={(e) => setTitle(e.target.value)}
                 />
 
-                <label>Fact body:</label>
+                <label>Описание:</label>
                 <textarea
                     required
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
                 ></textarea>
 
-                <label>Fact theme:</label>
+                <label>Тема:</label>
                 <select
                     value={theme}
                     onChange={(e) => setTheme(e.target.value)}
                 >
-                    <option value="general">General</option>
-                    <option value="combinatorics">Combinatorics</option>
-                    <option value="algebra">Algebra</option>
-                    <option value="geometry">Geometry</option>
-                    <option value="trigonometry">Trigonometry</option>
+                    <option value="general">Другое</option>
+                    <option value="combinatorics">Комбинаторика</option>
+                    <option value="algebra">Алгебра</option>
+                    <option value="geometry">Планиметрия</option>
+                    <option value="trigonometry">Тригонометрия</option>
                 </select>
 
-                { !isPending && <button>Add Fact</button> }
-                { isPending && <button>Adding Fact</button> }
+                { !isPending && <button>Добавить факт</button> }
+                { isPending && <button>Факт добавляется</button> }
 
             </form>
         </div>
