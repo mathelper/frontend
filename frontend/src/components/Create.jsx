@@ -56,7 +56,7 @@ const Create = () => {
                     <option value="general">Другое</option>
                     <option value="combinatorics">Комбинаторика</option>
                     <option value="algebra">Алгебра</option>
-                    <option value="geometry">Планиметрия</option>
+                    <option value="geometry">Геометрия</option>
                     <option value="trigonometry">Тригонометрия</option>
                 </select>
 
