@@ -6,11 +6,11 @@ const Navbar = () => {
       <nav className="navbar">
         <h1><Link to="/">Mathelper</Link></h1>
         <div className="links">
-          <Link to="/">Home</Link>
+          <Link to="/">Домой</Link>
           <Link to="/create" style={{ 
             color: 'white', 
             backgroundColor: '#5da2d5', 
-            borderRadius: '8px' }}>New fact</Link>
+            borderRadius: '8px' }}>Новый факт</Link>
         </div>
       </nav>
     );
