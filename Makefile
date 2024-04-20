@@ -1,2 +1,2 @@
 start:
-    sudo docker compose -f docker-compose-remote.yml up -d
+	sudo docker compose -f docker-compose-remote.yml up -d
