@@ -1,3 +1,5 @@
+[link](http://84.252.136.128:5173/) to the site :)
+
 # how to run
 
 - `pacman -S nodejs yarn`
