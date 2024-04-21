@@ -6,7 +6,7 @@ import Latex from 'react-latex';
 const FactDetails = () => {
 
     const { id } = useParams();
-    const { data: fact, isPending, error } = useFetch('http://localhost:8000/facts/' + id);
+    const { data: fact, isPending, error } = useFetch(`${import.meta.env.VITE_BASE_URL}/${id}`);
     // const history = useHistory();
 
     // const handleClick = () => {
